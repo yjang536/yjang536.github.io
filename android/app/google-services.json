@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "581104335572",
+    "project_id": "fir-auth-b2886",
+    "storage_bucket": "fir-auth-b2886.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581104335572:android:4720b85cb034e75a6c9941",
+        "android_client_info": {
+          "package_name": "com.goodmicro.micromobitech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581104335572-dvvocdlhhpinl7gll8rkgetem3fi6vs0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAONPnsSpZn6O31S0Uk02B_iRJq5Ep2p94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581104335572-dvvocdlhhpinl7gll8rkgetem3fi6vs0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

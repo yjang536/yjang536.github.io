@@ -1,3 +1,5 @@
+//import 'dart:io'; error in web
+
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -8,7 +10,6 @@ import 'package:micromobitech/helper/define.dart';
 import 'package:micromobitech/helper/localuser_control.dart';
 import 'package:flutter/foundation.dart';
 import 'package:micromobitech/model/user_model.dart';
-import 'package:firebase_core_web/firebase_core_web.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,17 +31,15 @@ void main() async {
     await Firebase.initializeApp();
   }
 
-  await FirebaseAuth.instance.signOut();
-
   if (FirebaseAuth.instance.currentUser != null) {
     globalUserModel = await LocalUserControl.getUserData();
   }
-  //await FirebaseAuth.instance.signOut();
+  await FirebaseAuth.instance.signOut();
 
-  await FirebaseAuth.instance.signInWithEmailAndPassword(
-    email: 'yjang536@gmail.com',
-    password: '123456',
-  );
+//  await FirebaseAuth.instance.signInWithEmailAndPassword(
+//    email: 'yjang536@gmail.com',
+//    password: '123456',
+//  );
 
   globalUserModel = UserModel.fromJson({
     "userId": "vgDVsEPm1nTXA7lvjsaIMeD1kv82",

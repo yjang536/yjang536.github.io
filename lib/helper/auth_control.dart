@@ -1,6 +1,4 @@
 import 'dart:async';
-import 'dart:io';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -61,7 +59,6 @@ class AuthControl extends GetxController {
     try {
       String? _myToken = await FirebaseMessaging.instance.getToken();
       loginController.add('startjob');
-      sleep(const Duration(seconds: 3));
 
       await _auth
           .signInWithEmailAndPassword(email: email!, password: password!)

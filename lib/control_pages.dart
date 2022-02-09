@@ -31,7 +31,8 @@ class ControlPages extends StatelessWidget {
             }
           }
         } else {
-          return NoInternet();
+          return HomePage();
+          //return NoInternet();
         }
       }
     });
